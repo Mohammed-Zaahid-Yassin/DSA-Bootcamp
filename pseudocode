@@ -15,3 +15,42 @@ if yes: then check if year is divisible by 100
                                       if yes: then it is a leap year
                     if not: then it is not a leap year
 if not it is not a leap year.
+stop
+
+
+
+2
+-------------------------------------
+start
+accept 2 numbers a and b as input
+save a+b in var c
+print c
+stop
+
+
+3
+------------------------------------
+start
+accept a number 'a' as input
+for every number from 1-10 (for loop construct) print a*i 
+print a new line for each iteration
+stop
+
+4
+-----------------------------------
+start
+accept 2 numbers a and b as input
+take the smaller number of the both using min function
+while i is less than min print hcf=i, if both a%i and b%i  ==0
+take the bigger number of the 2 using max function
+while i is greater than or equal to the bigger number, i is the lcm if both i%a and i%b ==0
+stop
+
+5
+--------------------------------
+start
+initialise a=[] #empty list
+while i is not equal to 'x', i=input(), a.append(i)
+print(sum(a))
+stop
+
