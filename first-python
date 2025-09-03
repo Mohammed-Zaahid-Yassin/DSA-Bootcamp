@@ -1,0 +1,80 @@
+#Even or Odd
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print(f"{num} is Even.")
+else:
+    print(f"{num} is Odd.")
+
+
+#Greeting by name
+name = input("Enter your name: ")
+print(f"Hello, {name}! Welcome!")
+
+
+#Simple Interest Calculator
+P = float(input("Enter Principal amount: "))
+T = float(input("Enter Time (in years): "))
+R = float(input("Enter Rate of interest: "))
+SI = (P * T * R) / 100
+print(f"Simple Interest = {SI}")
+
+
+
+#Calculator using If construct
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+op = input("Enter operator (+, -, *, /): ")
+
+if op == '+':
+    print(f"Result: {num1 + num2}")
+elif op == '-':
+    print(f"Result: {num1 - num2}")
+elif op == '*':
+    print(f"Result: {num1 * num2}")
+elif op == '/':
+    if num2 != 0:
+        print(f"Result: {num1 / num2}")
+    else:
+        print("Error: Division by zero.")
+else:
+    print("Invalid operator!")
+
+
+#Currency(USD- INR)
+inr = float(input("Enter amount in Rupees (INR): "))
+usd_rate = 0.012 #ADJUST AS NEEDED
+usd = inr * usd_rate
+print(f"{inr} INR = {usd:.2f} USD")
+
+
+
+#Fibonacci Series
+n = int(input("Enter number of terms: "))
+a, b = 0, 1
+count = 0
+print("Fibonacci Series:")
+while count < n:
+    print(a, end=' ')
+    a, b = b, a + b
+    count += 1
+
+
+#Check for Pallindrome
+string = input("Enter a string: ")
+if string == string[::-1]:
+    print(f"'{string}' is a Palindrome.")
+else:
+    print(f"'{string}' is not a Palindrome.")
+
+
+#Find Armstrong number
+start = int(input("Enter start of range: "))
+end = int(input("Enter end of range: "))
+
+print(f"Armstrong numbers between {start} and {end} are:")
+for num in range(start, end + 1):
+    power = len(str(num))
+    total = sum(int(digit) ** power for digit in str(num))
+    if num == total:
+        print(num)
