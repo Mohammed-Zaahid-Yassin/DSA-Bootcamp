@@ -67,14 +67,3 @@ if string == string[::-1]:
 else:
     print(f"'{string}' is not a Palindrome.")
 
-
-#Find Armstrong number
-start = int(input("Enter start of range: "))
-end = int(input("Enter end of range: "))
-
-print(f"Armstrong numbers between {start} and {end} are:")
-for num in range(start, end + 1):
-    power = len(str(num))
-    total = sum(int(digit) ** power for digit in str(num))
-    if num == total:
-        print(num)
